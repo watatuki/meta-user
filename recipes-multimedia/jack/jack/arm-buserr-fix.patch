@@ -1,0 +1,60 @@
+diff -crN a/jack/internal.h b/jack/internal.h
+*** a/jack/internal.h	2011-06-23 08:04:31.000000000 +0900
+--- b/jack/internal.h	2013-11-26 00:18:38.153200133 +0900
+***************
+*** 43,49 ****
+     than use the natural alignment of the processor and/or
+     compiler.
+  */
+! #define POST_PACKED_STRUCTURE __attribute__((__packed__))
+  #else
+  /* Add other things here for non-gcc platforms */
+  #endif
+--- 43,49 ----
+     than use the natural alignment of the processor and/or
+     compiler.
+  */
+! #define POST_PACKED_STRUCTURE
+  #else
+  /* Add other things here for non-gcc platforms */
+  #endif
+diff -crN a/jack/port.h b/jack/port.h
+*** a/jack/port.h	2011-02-03 13:53:50.000000000 +0900
+--- b/jack/port.h	2013-11-26 00:18:05.491504237 +0900
+***************
+*** 64,70 ****
+     than use the natural alignment of the processor and/or
+     compiler.
+  */
+! #define POST_PACKED_STRUCTURE __attribute__((__packed__))
+  #else
+  /* Add other things here for non-gcc platforms */
+  #endif
+--- 64,70 ----
+     than use the natural alignment of the processor and/or
+     compiler.
+  */
+! #define POST_PACKED_STRUCTURE
+  #else
+  /* Add other things here for non-gcc platforms */
+  #endif
+diff -crN a/jack/transport.h b/jack/transport.h
+*** a/jack/transport.h	2011-07-20 04:36:26.000000000 +0900
+--- b/jack/transport.h	2013-11-26 00:18:22.912180516 +0900
+***************
+*** 37,43 ****
+     than use the natural alignment of the processor and/or
+     compiler.
+  */
+! #define POST_PACKED_STRUCTURE __attribute__((__packed__))
+  #else
+  /* Add other things here for non-gcc platforms */
+  #endif
+--- 37,43 ----
+     than use the natural alignment of the processor and/or
+     compiler.
+  */
+! #define POST_PACKED_STRUCTURE
+  #else
+  /* Add other things here for non-gcc platforms */
+  #endif
